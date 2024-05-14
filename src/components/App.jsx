@@ -1,16 +1,26 @@
+import { Suspense, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import NotFound from 'pages/NotFound';
+import Loader from './Loader/Loader';
+import MainLayout from 'layouts/MainLayout';
+
+const HomePage = lazy(() => import('pages/HomePage'));
+const CataloguePage = lazy(() => import('pages/CataloguePage'));
+const FavoritesPage = lazy(() => import('pages/FavoritesPage'));
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Suspense fallback={<Loader isLoading={true} />}>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/catalog" element={<CataloguePage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 };
+
+/* <Toaster position="bottom-left" reverseOrder={false} /> */
