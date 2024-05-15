@@ -1,0 +1,16 @@
+.headerWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  z-index: 2;
+  height: 54px;
+  gap: 20px;
+  background-color: aliceblue;
+  box-shadow: 0px 2px 5px 0px #262a3440;
+  & > svg {
+    cursor: pointer;
+  }
+}
