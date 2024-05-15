@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/camper-trip/static/css/main.9deb185f.css",
+    "main.js": "/camper-trip/static/js/main.9bc778d8.js",
+    "static/js/983.ad6be1c5.chunk.js": "/camper-trip/static/js/983.ad6be1c5.chunk.js",
+    "static/js/650.f7eca366.chunk.js": "/camper-trip/static/js/650.f7eca366.chunk.js",
+    "static/js/697.9f39760a.chunk.js": "/camper-trip/static/js/697.9f39760a.chunk.js",
+    "index.html": "/camper-trip/index.html",
+    "main.9deb185f.css.map": "/camper-trip/static/css/main.9deb185f.css.map",
+    "main.9bc778d8.js.map": "/camper-trip/static/js/main.9bc778d8.js.map",
+    "983.ad6be1c5.chunk.js.map": "/camper-trip/static/js/983.ad6be1c5.chunk.js.map",
+    "650.f7eca366.chunk.js.map": "/camper-trip/static/js/650.f7eca366.chunk.js.map",
+    "697.9f39760a.chunk.js.map": "/camper-trip/static/js/697.9f39760a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9deb185f.css",
+    "static/js/main.9bc778d8.js"
+  ]
+}
