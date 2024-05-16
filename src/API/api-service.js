@@ -1,5 +1,4 @@
-const BASE_URL =
-  'https://663f5fa6e3a7c3218a4cec8c.mockapi.io/contacts/contacts';
+const BASE_URL = 'https://663f5fa6e3a7c3218a4cec8c.mockapi.io/data';
 
 export const fetchData = async (path, method, body) => {
   const headers = { 'Content-type': 'application/json' };
@@ -12,24 +11,24 @@ export const fetchData = async (path, method, body) => {
 };
 
 export const fetchApi = {
-  async getContacts(contactsParams) {
-    const params = new URLSearchParams(contactsParams);
+  async getData(dataParams) {
+    const params = new URLSearchParams(dataParams);
     const url = `${BASE_URL}/?${params}`;
     return await fetchData(url);
   },
-  async createContact(contactBody) {
+  async createContact(dataBody) {
     const method = 'POST';
     const url = `${BASE_URL}`;
-    const body = JSON.stringify(contactBody);
+    const body = JSON.stringify(dataBody);
     return await fetchData(url, method, body);
   },
-  async updateContact(id, contactBody) {
+  async updateData(id, dataBody) {
     const method = 'PUT';
     const url = `${BASE_URL}/${id}`;
-    const body = JSON.stringify(contactBody);
+    const body = JSON.stringify(dataBody);
     return await fetchData(url, method, body);
   },
-  async deleteContact(id) {
+  async deleteData(id) {
     const method = 'DELETE';
     const url = `${BASE_URL}/${id}`;
     return await fetchData(url, method);

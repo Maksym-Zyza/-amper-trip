@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .headerWrapper {
   position: relative;
   display: flex;
@@ -8,9 +10,12 @@
   z-index: 2;
   height: 54px;
   gap: 20px;
-  background-color: aliceblue;
+  background-color: $white;
   box-shadow: 0px 2px 5px 0px #262a3440;
   & > svg {
     cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

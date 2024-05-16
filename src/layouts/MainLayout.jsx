@@ -4,6 +4,7 @@ import { BurgerBtn, Logo } from 'components/Icons';
 import { SideBar } from 'components/Sidebar/Sidebar';
 import { useToggleSidebar } from 'hooks/useToggleSidebar';
 import { PageContainer } from 'components/PageContainer/PageContainer';
+import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
   const { isOpenSidebar, toggleSidebar, handleSidebar } = useToggleSidebar();
@@ -16,6 +17,7 @@ const MainLayout = () => {
         </NavLink>
       </header>
       <SideBar isOpenSidebar={isOpenSidebar} handleSidebar={handleSidebar} />
+      <Toaster position="bottom-left" reverseOrder={false} />
       <PageContainer isOpenSidebar={isOpenSidebar}>
         <Outlet />
       </PageContainer>

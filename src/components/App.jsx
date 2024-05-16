@@ -22,5 +22,3 @@ export const App = () => {
     </Suspense>
   );
 };
-
-/* <Toaster position="bottom-left" reverseOrder={false} /> */

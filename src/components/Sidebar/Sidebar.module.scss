@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -8,7 +10,7 @@
   background-color: #262a34;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 54px;
   a {
     display: flex !important;
     align-items: center;
@@ -16,25 +18,25 @@
     padding: 20px 15px;
     text-decoration: none;
     font-size: 14px;
-    color: #f3f5fa;
+    color: $white;
     display: block;
     transition: 0.3s;
     &:hover {
-      color: #99ece4;
-      background-color: #635ac7;
+      color: $yellow;
+      background-color: $active;
     }
     svg {
       width: 18px;
       margin-right: 20px;
       transition: 0.3s;
       path {
-        fill: #f3f5fa;
-        stroke: #f3f5fa;
+        fill: $white;
+        stroke: $white;
       }
     }
     &:hover path {
-      fill: #99ece4;
-      stroke: #99ece4;
+      fill: $yellow;
+      stroke: $yellow;
     }
     .collapsing {
       margin-left: 24px;
