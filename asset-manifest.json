@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/camper-trip/static/css/main.b6cea5da.css",
-    "main.js": "/camper-trip/static/js/main.fdd29a3c.js",
-    "static/js/983.ad6be1c5.chunk.js": "/camper-trip/static/js/983.ad6be1c5.chunk.js",
+    "main.css": "/camper-trip/static/css/main.32b1bcc3.css",
+    "main.js": "/camper-trip/static/js/main.a49d6777.js",
+    "static/js/307.5eb4f2e2.chunk.js": "/camper-trip/static/js/307.5eb4f2e2.chunk.js",
     "static/js/650.f7eca366.chunk.js": "/camper-trip/static/js/650.f7eca366.chunk.js",
     "static/js/697.9f39760a.chunk.js": "/camper-trip/static/js/697.9f39760a.chunk.js",
     "static/media/Camper.svg": "/camper-trip/static/media/Camper.aa825a0616557ab4a8f3a18b9e8c4de4.svg",
@@ -11,15 +11,15 @@
     "index.html": "/camper-trip/index.html",
     "static/media/Catalog.svg": "/camper-trip/static/media/Catalog.e0914de809ed4762bab205977a8f8b74.svg",
     "static/media/Favorites.svg": "/camper-trip/static/media/Favorites.4a52a48acf9ece031b84a7714f1e9695.svg",
-    "static/media/BurgerBtn.svg": "/camper-trip/static/media/BurgerBtn.06bc914c7e5c6bbc8639c5fb37cbe491.svg",
-    "main.b6cea5da.css.map": "/camper-trip/static/css/main.b6cea5da.css.map",
-    "main.fdd29a3c.js.map": "/camper-trip/static/js/main.fdd29a3c.js.map",
-    "983.ad6be1c5.chunk.js.map": "/camper-trip/static/js/983.ad6be1c5.chunk.js.map",
+    "static/media/BurgerBtn.svg": "/camper-trip/static/media/BurgerBtn.b63f2b0133855655606c4172f642b17e.svg",
+    "main.32b1bcc3.css.map": "/camper-trip/static/css/main.32b1bcc3.css.map",
+    "main.a49d6777.js.map": "/camper-trip/static/js/main.a49d6777.js.map",
+    "307.5eb4f2e2.chunk.js.map": "/camper-trip/static/js/307.5eb4f2e2.chunk.js.map",
     "650.f7eca366.chunk.js.map": "/camper-trip/static/js/650.f7eca366.chunk.js.map",
     "697.9f39760a.chunk.js.map": "/camper-trip/static/js/697.9f39760a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6cea5da.css",
-    "static/js/main.fdd29a3c.js"
+    "static/css/main.32b1bcc3.css",
+    "static/js/main.a49d6777.js"
   ]
 }
