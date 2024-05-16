@@ -1,3 +1,4 @@
+import VanList from 'components/VanList/VanList';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from 'store/contacts/slice';
@@ -13,7 +14,12 @@ const HomePage = () => {
     dispatch(fetchData());
   }, [dispatch]);
 
-  return <div>HomePage</div>;
+  return (
+    <div>
+      HomePage
+      <VanList data={data.items} />
+    </div>
+  );
 };
 
 export default HomePage;
