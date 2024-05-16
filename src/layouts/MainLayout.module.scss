@@ -14,8 +14,9 @@
   box-shadow: 0px 2px 5px 0px #262a3440;
   & > svg {
     cursor: pointer;
-    &:hover {
-      opacity: 0.8;
+    &:hover path {
+      fill: $active;
+      transition: $trans;
     }
   }
 }

@@ -2,18 +2,18 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import toast from 'react-hot-toast';
 import { fetchApi } from 'API/api-service';
 
-export const fetchContacts = createAsyncThunk('fetchAll', async () => {
-  const data = await fetchApi.getContacts();
+export const fetchData = createAsyncThunk('fetchAll', async () => {
+  const data = await fetchApi.getData();
   return data;
 });
-export const addContact = createAsyncThunk('addContact', async body => {
-  const createItem = await fetchApi.createContact(body);
-  toast.success(`Contact ${createItem.name} was added`);
+export const addData = createAsyncThunk('addData', async body => {
+  const createItem = await fetchApi.createData(body);
+  toast.success(`Data ${createItem.name} was added`);
   return createItem;
 });
-export const deleteContact = createAsyncThunk('deleteContact', async id => {
-  const deletedItem = await fetchApi.deleteContact(id);
-  toast.success(`Contact ${deletedItem.name} was removed`);
+export const deleteData = createAsyncThunk('deleteData', async id => {
+  const deletedItem = await fetchApi.deleteData(id);
+  toast.success(`Data ${deletedItem.name} was removed`);
   return deletedItem.id;
 });
 
@@ -29,18 +29,18 @@ const handleFulfilled = state => {
   state.isLoading = false;
 };
 
-const contactsSlice = createSlice({
-  name: 'contacts',
+const dataSlice = createSlice({
+  name: 'data',
   initialState: { items: [], isLoading: false, error: null },
   extraReducers: builder => {
     builder
-      .addCase(fetchContacts.fulfilled, (state, action) => {
+      .addCase(fetchData.fulfilled, (state, action) => {
         state.items = action.payload;
       })
-      .addCase(addContact.fulfilled, (state, action) => {
+      .addCase(addData.fulfilled, (state, action) => {
         state.items.push(action.payload);
       })
-      .addCase(deleteContact.fulfilled, (state, action) => {
+      .addCase(deleteData.fulfilled, (state, action) => {
         state.items = state.items.filter(el => el.id !== action.payload);
       })
       .addMatcher(action => action.type.endsWith('/pending'), handlePending)
@@ -52,4 +52,4 @@ const contactsSlice = createSlice({
   },
 });
 
-export const contactsReducer = contactsSlice.reducer;
+export const dataReducer = dataSlice.reducer;
