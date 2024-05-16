@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/camper-trip/static/css/main.32b1bcc3.css",
-    "main.js": "/camper-trip/static/js/main.02f25d27.js",
-    "static/js/307.5eb4f2e2.chunk.js": "/camper-trip/static/js/307.5eb4f2e2.chunk.js",
+    "main.css": "/camper-trip/static/css/main.eb392112.css",
+    "main.js": "/camper-trip/static/js/main.13ee2181.js",
+    "static/css/472.5f0585d3.chunk.css": "/camper-trip/static/css/472.5f0585d3.chunk.css",
+    "static/js/472.9f127750.chunk.js": "/camper-trip/static/js/472.9f127750.chunk.js",
     "static/js/650.f7eca366.chunk.js": "/camper-trip/static/js/650.f7eca366.chunk.js",
     "static/js/697.9f39760a.chunk.js": "/camper-trip/static/js/697.9f39760a.chunk.js",
     "static/media/Wind.svg": "/camper-trip/static/media/Wind.e958509129baf1cbc457d03d571594e6.svg",
@@ -35,14 +36,15 @@
     "static/media/Shower.svg": "/camper-trip/static/media/Shower.b6e38c85f8db354c4c8a3f56f72f5101.svg",
     "static/media/Kitchen.svg": "/camper-trip/static/media/Kitchen.afe6130490e04e1ebb0a3c725651ff4c.svg",
     "static/media/BurgerBtn.svg": "/camper-trip/static/media/BurgerBtn.b63f2b0133855655606c4172f642b17e.svg",
-    "main.32b1bcc3.css.map": "/camper-trip/static/css/main.32b1bcc3.css.map",
-    "main.02f25d27.js.map": "/camper-trip/static/js/main.02f25d27.js.map",
-    "307.5eb4f2e2.chunk.js.map": "/camper-trip/static/js/307.5eb4f2e2.chunk.js.map",
+    "main.eb392112.css.map": "/camper-trip/static/css/main.eb392112.css.map",
+    "main.13ee2181.js.map": "/camper-trip/static/js/main.13ee2181.js.map",
+    "472.5f0585d3.chunk.css.map": "/camper-trip/static/css/472.5f0585d3.chunk.css.map",
+    "472.9f127750.chunk.js.map": "/camper-trip/static/js/472.9f127750.chunk.js.map",
     "650.f7eca366.chunk.js.map": "/camper-trip/static/js/650.f7eca366.chunk.js.map",
     "697.9f39760a.chunk.js.map": "/camper-trip/static/js/697.9f39760a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32b1bcc3.css",
-    "static/js/main.02f25d27.js"
+    "static/css/main.eb392112.css",
+    "static/js/main.13ee2181.js"
   ]
 }
