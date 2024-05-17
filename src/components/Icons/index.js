@@ -27,6 +27,7 @@ import { ReactComponent as Shower } from './Shower.svg';
 import { ReactComponent as Users } from './Users.svg';
 import { ReactComponent as Water } from './Water.svg';
 import { ReactComponent as Wind } from './Wind.svg';
+import { ReactComponent as Star } from './Star.svg';
 
 export {
   Logo,
@@ -58,4 +59,5 @@ export {
   Users,
   Water,
   Wind,
+  Star,
 };

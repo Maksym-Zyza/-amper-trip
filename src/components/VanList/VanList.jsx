@@ -1,5 +1,7 @@
 import React from 'react';
 import style from './VanList.module.scss';
+import { Like, Location, Star } from 'components/Icons';
+import { DetailsItem } from 'components/DetailsItem/DetailsItem';
 
 const VanList = ({ data }) => {
   return (
@@ -10,10 +12,31 @@ const VanList = ({ data }) => {
             <div className={style.img}>
               <img src={item.gallery[0]} alt="" />
             </div>
+
             <div className={style.itemContent}>
-              <h2>{item.name}</h2>
-              <h3>€{item.price}</h3>
+              <div className={style.firstLine}>
+                <p>{item.name}</p>
+                <p>
+                  €{item.price}
+                  <Like />
+                </p>
+              </div>
+
+              <div className={style.secondLine}>
+                <Star />
+                {item.rating}
+                <span> ({`${item.reviews?.length}`} Reviews)</span>
+                <span className={style.location}>
+                  <Location /> item.location
+                </span>
+              </div>
               <p>{item.description}</p>
+              <ul className={style.detailList}>
+                {Object.entries(item.details).map((detail, index) => (
+                  <DetailsItem detail={detail} key={index} />
+                ))}
+              </ul>
+              <button className={style.btn}>Show more</button>
             </div>
           </div>
         ))}
