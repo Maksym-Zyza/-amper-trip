@@ -1,3 +1,9 @@
+.homePage {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
 .centerPage {
   display: flex;
   align-items: center;
