@@ -13,10 +13,14 @@ import {
   Hob,
   Water,
   Bathroom,
+  Wind,
+  Conditioner,
 } from 'components/Icons';
 
 export const iconDetails = {
-  airConditioner: <Automatic />,
+  automatic: <Automatic />,
+  airConditioner: <Conditioner />,
+  AC: <Wind />,
   toilet: <Paper />,
   CD: <CD />,
   TV: <Screen />,

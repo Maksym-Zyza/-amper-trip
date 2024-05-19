@@ -2,7 +2,7 @@ import React from 'react';
 import style from './VanList.module.scss';
 import { Like, Location, Star } from 'components/Icons';
 import { DetailsItem } from 'components/DetailsItem/DetailsItem';
-import { Button } from 'components/UI/Button';
+import { Button } from 'components/UI/Button/Button';
 
 const VanList = ({ data }) => {
   return (

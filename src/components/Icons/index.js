@@ -31,6 +31,7 @@ import { ReactComponent as Star } from './Star.svg';
 import { ReactComponent as TV } from './TV.svg';
 import { ReactComponent as Hob } from './Hob.svg';
 import { ReactComponent as Bathroom } from './Bathroom.svg';
+import { ReactComponent as Conditioner } from './Conditioner.svg';
 
 export {
   Logo,
@@ -41,6 +42,7 @@ export {
   Camper,
   Camper_mid,
   Camper_fully,
+  Conditioner,
   Automatic,
   Bed,
   Calendar,

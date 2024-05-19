@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts, deleteContact } from 'store/contacts/slice';
 import { getContacts, getFilteredContacts } from 'store/selectors';
-import Error from 'components/Error/Error';
-import Loader from 'components/Loader/Loader';
+import Error from 'components/UI/Error/Error';
+import Loader from 'components/UI/Loader/Loader';
 
 export const ContactList = () => {
   const { isLoading, error } = useSelector(getContacts);

@@ -1,37 +1,6 @@
 @import '../variables.scss';
 
 .homePage {
-  .mainBanner {
-    display: flex;
-    flex-direction: row;
-    gap: 64px;
-    padding: 30px 60px;
-    background-color: $white;
-    border-radius: 12px;
-
-    .mainImg > img {
-      min-width: 640px;
-      min-height: 420px;
-      overflow: hidden;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    .contentWrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-      h1 {
-        margin: 0;
-      }
-      p {
-        font-size: 1.2em;
-        line-height: 1.6;
-      }
-    }
-  }
-
   .logo {
     text-align: center;
     padding-top: 36px;

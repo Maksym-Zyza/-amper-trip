@@ -3,7 +3,7 @@ import style from './MainLayout.module.scss';
 import { BurgerBtn, Logo } from 'components/Icons';
 import { SideBar } from 'components/Sidebar/Sidebar';
 import { useToggleSidebar } from 'hooks/useToggleSidebar';
-import { PageContainer } from 'components/PageContainer/PageContainer';
+import { PageContainer } from 'components/UI/PageContainer/PageContainer';
 import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {

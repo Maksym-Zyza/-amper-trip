@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import style from './Pages.module.scss';
 import { fetchData } from 'store/contacts/slice';
 import { getData } from 'store/selectors';
-import { Button } from 'components/UI/Button';
 import { Logo } from 'components/Icons';
+import { Banner } from 'components/UI/Banner/Banner';
 
 const HomePage = () => {
   const data = useSelector(getData);
@@ -18,26 +18,7 @@ const HomePage = () => {
 
   return (
     <div className={style.homePage}>
-      <div className={style.mainBanner}>
-        <div className={style.contentWrapper}>
-          <h1>
-            Leave all worries behind and embark on the journey of your dreams!
-          </h1>
-          <p>
-            Rent a camper and embark on an unforgettable adventure with Camper
-            Trip
-          </p>
-          <div>
-            <Button text="Book Now" />
-          </div>
-        </div>
-        <div className={style.mainImg}>
-          <img
-            src="https://ftp.goit.study/img/campers-test-task/8-1.webp"
-            alt="Camper"
-          />
-        </div>
-      </div>
+      <Banner />
 
       <div className={style.logo}>
         <Logo />
