@@ -29,7 +29,8 @@ import { ReactComponent as Water } from './Water.svg';
 import { ReactComponent as Wind } from './Wind.svg';
 import { ReactComponent as Star } from './Star.svg';
 import { ReactComponent as TV } from './TV.svg';
-import { ReactComponent as Hob } from './TV.svg';
+import { ReactComponent as Hob } from './Hob.svg';
+import { ReactComponent as Bathroom } from './Bathroom.svg';
 
 export {
   Logo,
@@ -50,6 +51,7 @@ export {
   Like,
   Location,
   Microwave,
+  Bathroom,
   Paper,
   Petrol,
   Plate,

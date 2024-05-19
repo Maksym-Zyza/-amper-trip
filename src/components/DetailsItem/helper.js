@@ -12,6 +12,7 @@ import {
   Shower,
   Hob,
   Water,
+  Bathroom,
 } from 'components/Icons';
 
 export const iconDetails = {
@@ -28,5 +29,5 @@ export const iconDetails = {
   gas: <Gas />,
   water: <Water />,
   hob: <Hob />,
-  bathroom: <Bed />,
+  bathroom: <Bathroom />,
 };
