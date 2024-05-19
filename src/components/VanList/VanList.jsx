@@ -2,6 +2,7 @@ import React from 'react';
 import style from './VanList.module.scss';
 import { Like, Location, Star } from 'components/Icons';
 import { DetailsItem } from 'components/DetailsItem/DetailsItem';
+import { Button } from 'components/UI/Button';
 
 const VanList = ({ data }) => {
   return (
@@ -36,7 +37,10 @@ const VanList = ({ data }) => {
                   <DetailsItem detail={detail} key={index} />
                 ))}
               </ul>
-              <button className={style.btn}>Show more</button>
+              <Button
+                text="Show more"
+                onClick={() => console.log('handleShowMore')}
+              />
             </div>
           </div>
         ))}
