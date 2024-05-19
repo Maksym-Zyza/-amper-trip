@@ -9,7 +9,8 @@
 .itemWrapper {
   display: flex;
   padding: 24px;
-  width: 820px;
+  min-width: 820px;
+  max-width: 920px;
   border-radius: 20px;
   border: $border;
   gap: 24px;
@@ -43,6 +44,12 @@
         svg {
           margin-left: 12px;
           cursor: pointer;
+        }
+      }
+      .active {
+        fill: $active;
+        path {
+          stroke: $active;
         }
       }
     }
