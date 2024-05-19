@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/camper-trip/static/css/main.a48e511f.css",
-    "main.js": "/camper-trip/static/js/main.0b166585.js",
-    "static/css/427.c3e368ab.chunk.css": "/camper-trip/static/css/427.c3e368ab.chunk.css",
-    "static/js/427.b6a5e626.chunk.js": "/camper-trip/static/js/427.b6a5e626.chunk.js",
+    "main.css": "/camper-trip/static/css/main.8527a55c.css",
+    "main.js": "/camper-trip/static/js/main.05d8e4bc.js",
+    "static/css/727.483d768e.chunk.css": "/camper-trip/static/css/727.483d768e.chunk.css",
+    "static/js/727.2cb089ba.chunk.js": "/camper-trip/static/js/727.2cb089ba.chunk.js",
     "static/js/650.f7eca366.chunk.js": "/camper-trip/static/js/650.f7eca366.chunk.js",
     "static/js/697.9f39760a.chunk.js": "/camper-trip/static/js/697.9f39760a.chunk.js",
     "static/media/Wind.svg": "/camper-trip/static/media/Wind.e958509129baf1cbc457d03d571594e6.svg",
@@ -38,15 +38,15 @@
     "static/media/Shower.svg": "/camper-trip/static/media/Shower.b6e38c85f8db354c4c8a3f56f72f5101.svg",
     "static/media/Kitchen.svg": "/camper-trip/static/media/Kitchen.afe6130490e04e1ebb0a3c725651ff4c.svg",
     "static/media/BurgerBtn.svg": "/camper-trip/static/media/BurgerBtn.b63f2b0133855655606c4172f642b17e.svg",
-    "main.a48e511f.css.map": "/camper-trip/static/css/main.a48e511f.css.map",
-    "main.0b166585.js.map": "/camper-trip/static/js/main.0b166585.js.map",
-    "427.c3e368ab.chunk.css.map": "/camper-trip/static/css/427.c3e368ab.chunk.css.map",
-    "427.b6a5e626.chunk.js.map": "/camper-trip/static/js/427.b6a5e626.chunk.js.map",
+    "main.8527a55c.css.map": "/camper-trip/static/css/main.8527a55c.css.map",
+    "main.05d8e4bc.js.map": "/camper-trip/static/js/main.05d8e4bc.js.map",
+    "727.483d768e.chunk.css.map": "/camper-trip/static/css/727.483d768e.chunk.css.map",
+    "727.2cb089ba.chunk.js.map": "/camper-trip/static/js/727.2cb089ba.chunk.js.map",
     "650.f7eca366.chunk.js.map": "/camper-trip/static/js/650.f7eca366.chunk.js.map",
     "697.9f39760a.chunk.js.map": "/camper-trip/static/js/697.9f39760a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a48e511f.css",
-    "static/js/main.0b166585.js"
+    "static/css/main.8527a55c.css",
+    "static/js/main.05d8e4bc.js"
   ]
 }
