@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import style from './Pages.module.scss';
 import { VanFilters } from 'components/VanFilters/VanFilters';
 import VanList from 'components/VanList/VanList';
-import { fetchData } from 'store/contacts/slice';
+import { fetchData } from 'store/dataSlice';
 import { getData } from 'store/selectors';
 
 const CataloguePage = () => {

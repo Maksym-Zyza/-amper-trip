@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts, deleteContact } from 'store/contacts/slice';
+import { fetchContacts, deleteContact } from 'store/dataSlice';
 import { getContacts, getFilteredContacts } from 'store/selectors';
 import Error from 'components/UI/Error/Error';
 import Loader from 'components/UI/Loader/Loader';

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addContact } from 'store/contacts/slice';
+import { addContact } from 'store/dataSlice';
 
 const defaultState = { name: '', number: '' };
 

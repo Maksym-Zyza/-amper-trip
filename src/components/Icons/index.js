@@ -4,8 +4,8 @@ import { ReactComponent as Catalog } from './Catalog.svg';
 import { ReactComponent as Favorites } from './Favorites.svg';
 import { ReactComponent as BurgerBtn } from './BurgerBtn.svg';
 import { ReactComponent as Camper } from './Camper.svg';
-import { ReactComponent as Camper_mid } from './Camper_mid.svg';
-import { ReactComponent as Camper_fully } from './Camper_fully.svg';
+import { ReactComponent as CamperMid } from './CamperMid.svg';
+import { ReactComponent as CamperFully } from './CamperFully.svg';
 import { ReactComponent as Automatic } from './Automatic.svg';
 import { ReactComponent as Bed } from './Bed.svg';
 import { ReactComponent as Calendar } from './Calendar.svg';
@@ -40,8 +40,8 @@ export {
   Favorites,
   BurgerBtn,
   Camper,
-  Camper_mid,
-  Camper_fully,
+  CamperMid,
+  CamperFully,
   Conditioner,
   Automatic,
   Bed,

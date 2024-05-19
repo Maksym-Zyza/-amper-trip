@@ -3,7 +3,7 @@ import style from './Pages.module.scss';
 
 const NotFound = () => {
   return (
-    <div className={style.centerPage}>
+    <div className={style.notFoundPage}>
       <h1>Sorry, the page you are looking for does not exist.</h1>
     </div>
   );

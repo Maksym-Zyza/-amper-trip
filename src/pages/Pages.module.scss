@@ -24,14 +24,14 @@
   gap: 64px;
 }
 
-.centerPage {
+.notFoundPage {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
   h1 {
-    color: #01b4e4;
+    color: $active;
     text-align: center;
   }
 }

@@ -1,8 +1,8 @@
 import {
   Automatic,
   Camper,
-  Camper_fully,
-  Camper_mid,
+  CamperFully,
+  CamperMid,
   Kitchen,
   Screen,
   Shower,
@@ -19,6 +19,6 @@ export const vehicleEquipment = [
 
 export const vehicleType = [
   { label: 'Van', icon: <Camper /> },
-  { label: 'Fully Integrated', icon: <Camper_fully /> },
-  { label: 'Alcove', icon: <Camper_mid /> },
+  { label: 'Fully Integrated', icon: <CamperFully /> },
+  { label: 'Alcove', icon: <CamperMid /> },
 ];

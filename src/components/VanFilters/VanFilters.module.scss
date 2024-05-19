@@ -13,50 +13,45 @@
     color: rgba(16, 24, 40, 0.6);
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  .location {
+    position: relative;
+    margin-bottom: 32px;
+    label {
+      @extend .label;
+    }
+    input {
+      height: 56px;
+      width: 300px;
+      padding: 0 18px 0 45px;
+      background-color: $white;
+      font-size: inherit;
+      color: inherit;
+      border-radius: 10px;
+      border: none;
+    }
+    svg {
+      position: absolute;
+      bottom: 17px;
+      left: 18px;
+    }
+  }
 
-    .location {
-      position: relative;
-      label {
-        @extend .label;
-      }
-      input {
-        height: 56px;
-        width: 300px;
-        padding: 0 18px 0 45px;
-        background-color: $white;
-        font-size: inherit;
-        color: inherit;
-        border-radius: 10px;
-        border: none;
-      }
-      svg {
-        position: absolute;
-        bottom: 17px;
-        left: 18px;
-      }
+  .filterSection {
+    h2 {
+      @extend .label;
+    }
+    h3 {
+      margin: 0;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(16, 24, 40, 0.1);
     }
 
-    .filterSection {
-      h2 {
-        @extend .label;
-      }
-      h3 {
-        margin: 0;
-        padding-bottom: 32px;
-        border-bottom: 1px solid rgba(16, 24, 40, 0.1);
-      }
-
-      .list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 24px;
-        margin-bottom: 32px;
-        gap: 10px;
-      }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      gap: 10px;
     }
   }
 }

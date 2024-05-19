@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as Search } from '../Icons/Search.svg';
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'store/filter/slice';
+import { setFilter } from 'store/filterSlice';
 import { getFilterValue } from 'store/selectors';
 
 export const Filter = () => {
