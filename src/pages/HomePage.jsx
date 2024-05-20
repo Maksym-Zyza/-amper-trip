@@ -1,29 +1,15 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import style from './Pages.module.scss';
-import { fetchData } from 'store/dataSlice';
-import { getAdverts } from 'store/selectors';
 import { Logo } from 'components/Icons';
 import { Banner } from 'components/UI/Banner/Banner';
 
 const HomePage = () => {
-  const data = useSelector(getAdverts);
-  console.log(data);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
-
   return (
     <div className={style.homePage}>
       <Banner />
-
       <div className={style.logo}>
         <Logo />
       </div>
-
       <div className={style.description}>
         Camper Trip is your trusted partner for unforgettable travels. We offer
         modern and comfortable campers that will make your trip as convenient

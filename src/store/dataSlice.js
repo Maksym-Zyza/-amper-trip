@@ -4,16 +4,17 @@ import { fetchApi } from 'API/axios-service';
 
 export const fetchData = createAsyncThunk('fetchAll', async () => {
   const data = await fetchApi.getData();
+  toast.success(`Adverts retrieved successfully`);
   return data;
 });
 export const addData = createAsyncThunk('addData', async body => {
   const createItem = await fetchApi.createData(body);
-  toast.success(`Data ${createItem.name} was added`);
+  toast.success(`Advert ${createItem.name} was added`);
   return createItem;
 });
 export const deleteData = createAsyncThunk('deleteData', async id => {
   const deletedItem = await fetchApi.deleteData(id);
-  toast.success(`Data ${deletedItem.name} was removed`);
+  toast.success(`Advert ${deletedItem.name} was removed`);
   return deletedItem.id;
 });
 
