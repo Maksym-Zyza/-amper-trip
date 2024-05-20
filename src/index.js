@@ -13,11 +13,11 @@ const root = createRoot(container);
 root.render(
   // <React.StrictMode>
   <BrowserRouter basename="/camper-trip">
-    <PersistGate loading={null} persistor={persistor}>
-      <Provider store={store}>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
         <App />
-      </Provider>
-    </PersistGate>
+      </PersistGate>
+    </Provider>
   </BrowserRouter>
   // </React.StrictMode>
 );
