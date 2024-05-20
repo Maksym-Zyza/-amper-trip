@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from 'store/store';
+import { PaginationProvider } from 'context';
 import { App } from 'components/App';
 import './index.scss';
 
@@ -15,7 +16,9 @@ root.render(
   <BrowserRouter basename="/camper-trip">
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <App />
+        <PaginationProvider>
+          <App />
+        </PaginationProvider>
       </PersistGate>
     </Provider>
   </BrowserRouter>

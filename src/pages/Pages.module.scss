@@ -24,6 +24,13 @@
   gap: 64px;
 }
 
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
 .notFoundPage {
   display: flex;
   align-items: center;
