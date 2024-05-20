@@ -4,12 +4,12 @@ import style from './Pages.module.scss';
 import { VanFilters } from 'components/VanFilters/VanFilters';
 import VanList from 'components/VanList/VanList';
 import { fetchData } from 'store/dataSlice';
-import { getData } from 'store/selectors';
+import { getAdverts } from 'store/selectors';
 import Error from 'components/UI/Error/Error';
 import Loader from 'components/UI/Loader/Loader';
 
 const CataloguePage = () => {
-  const { adverts, isLoading, error } = useSelector(getData);
+  const { adverts, isLoading, error } = useSelector(getAdverts);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,6 @@ const CataloguePage = () => {
           <VanList data={adverts} />
         </div>
       )}
-
       {error && <Error error={error} />}
       <Loader isLoading={isLoading} />
     </>

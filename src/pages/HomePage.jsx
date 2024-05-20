@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import style from './Pages.module.scss';
 import { fetchData } from 'store/dataSlice';
-import { getData } from 'store/selectors';
+import { getAdverts } from 'store/selectors';
 import { Logo } from 'components/Icons';
 import { Banner } from 'components/UI/Banner/Banner';
 
 const HomePage = () => {
-  const data = useSelector(getData);
+  const data = useSelector(getAdverts);
   console.log(data);
 
   const dispatch = useDispatch();
