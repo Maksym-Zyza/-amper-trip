@@ -46,7 +46,7 @@
 }
 
 .active {
-  border-bottom: 6px solid #ff5a5f;
+  border-bottom: 6px solid $active;
 }
 
 .feature {
@@ -98,9 +98,9 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 125%;
-  color: #e44848;
+  color: $active;
   border-radius: 100%;
-  background-color: #f2f4f7;
+  background-color: $white;
 }
 
 .reviewAuthor {
@@ -108,7 +108,7 @@
 }
 
 .reviewRating {
-  color: #ff5a5f;
+  color: $active;
   font-weight: bold;
 }
 
@@ -117,7 +117,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 24px;
-  color: #101828;
+  color: $black;
 }
 
 .icon,
@@ -125,7 +125,7 @@
   width: 16px;
   height: 16px;
   fill: transparent;
-  stroke: #101828;
+  stroke: $black;
 }
 
 .popIcon {
@@ -135,7 +135,7 @@
 
 .ratingBar {
   display: block;
-  border-bottom: 1px solid #101828;
+  border-bottom: 1px solid $black;
 }
 
 .title {
@@ -238,7 +238,7 @@
 .detailsList {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 9px;
   margin-top: 24px;
   padding-top: 24px;
   border-top: 1px solid rgba(16, 24, 40, 0.1);
@@ -255,6 +255,8 @@
 .featuresList {
   display: flex;
   flex-wrap: wrap;
+  height: 150px;
+  overflow-y: auto;
   gap: 8px;
 }
 
@@ -268,7 +270,7 @@
   font-weight: 500;
   line-height: 125%;
   border-radius: 100px;
-  background-color: #f2f4f7;
+  background-color: $white;
   & > svg {
     height: 18px;
   }

@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 
 .formTitle {
   font-size: 20px;
@@ -11,10 +12,10 @@
   width: 448px;
   height: fit-content;
   border-radius: 10px;
-  color: #101828;
+  color: $black;
   border: 1px solid rgba(16, 24, 40, 0.2);
   border-radius: 8px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .bookingForm input,
@@ -29,7 +30,7 @@
   color: rgba(16, 24, 40, 0.6);
   border-radius: 10px;
   border-color: transparent;
-  background-color: #f7f7f7;
+  background-color: $input;
 }
 
 .bookingForm input {
@@ -46,11 +47,12 @@
 .slogan {
   display: block;
   margin-bottom: 24px;
+  color: $text;
 }
 
 .error {
   display: block;
-  color: #ff5a5f;
+  color: $active;
   margin-bottom: 8px;
 }
 
