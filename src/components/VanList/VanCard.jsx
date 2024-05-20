@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getFavorites } from '../../store/selectors';
 import style from './VanList.module.scss';
@@ -6,6 +6,8 @@ import { Like, Location, Star } from 'components/Icons';
 import { DetailsItem } from 'components/DetailsItem/DetailsItem';
 import { Button } from 'components/UI/Button/Button';
 import { toggleFavorites } from 'store/favoritesSlice';
+import { Modal } from 'components/UI/Modal/Modal';
+import { CardDetails } from 'components/CardDetails/CardDetails';
 
 const VanCard = ({ item }) => {
   const favorites = useSelector(getFavorites);
@@ -13,8 +15,25 @@ const VanCard = ({ item }) => {
   const handleFavorites = () => dispatch(toggleFavorites(item));
   const isFavorite = favorites.find(el => el._id === item._id);
 
+  const [card, setCard] = useState();
+  const [isDescription, setIsDescription] = useState(true);
+  const modalRef = useRef();
+
+  const handleShowMore = card => {
+    modalRef.current.open();
+    setIsDescription(false);
+    setCard(card);
+  };
+
   return (
     <div key={item._id} className={style.itemWrapper}>
+      <Modal ref={modalRef}>
+        <CardDetails
+          card={card}
+          isDescription={isDescription}
+          setIsDescription={setIsDescription}
+        />
+      </Modal>
       <div className={style.img}>
         <img src={item.gallery[0]} alt="" />
       </div>
@@ -45,10 +64,7 @@ const VanCard = ({ item }) => {
             <DetailsItem detail={detail} key={index} />
           ))}
         </ul>
-        <Button
-          text="Show more"
-          onClick={() => console.log('handleShowMore')}
-        />
+        <Button text="Show more" onClick={() => handleShowMore(item)} />
       </div>
     </div>
   );

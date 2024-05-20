@@ -32,6 +32,7 @@ import { ReactComponent as TV } from './TV.svg';
 import { ReactComponent as Hob } from './Hob.svg';
 import { ReactComponent as Bathroom } from './Bathroom.svg';
 import { ReactComponent as Conditioner } from './Conditioner.svg';
+import { ReactComponent as Close } from './Close.svg';
 
 export {
   Logo,
@@ -64,6 +65,7 @@ export {
   Shower,
   Users,
   Water,
+  Close,
   Wind,
   Star,
   TV,
