@@ -5,11 +5,11 @@ const favoritesSlice = createSlice({
   initialState: [],
   reducers: {
     toggleFavorites(state, action) {
-      const isExists = state.find(_id => _id === action.payload);
+      const isExists = state.find(el => el._id === action.payload._id);
       if (!isExists) {
         state.push(action.payload);
       } else {
-        return state.filter(id => id !== action.payload);
+        return state.filter(el => el._id !== action.payload._id);
       }
     },
   },
