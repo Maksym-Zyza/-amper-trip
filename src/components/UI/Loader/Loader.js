@@ -2,17 +2,17 @@ import React from 'react';
 import { DNA } from 'react-loader-spinner';
 
 const Loader = ({ isLoading }) => {
+  const loaderStyle = {
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
   return (
     <>
       {isLoading && (
-        <div
-          style={{
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+        <div style={loaderStyle}>
           {isLoading && (
             <DNA
               visible={true}
