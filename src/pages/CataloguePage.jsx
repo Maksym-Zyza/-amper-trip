@@ -9,7 +9,7 @@ import Error from 'components/UI/Error/Error';
 import Loader from 'components/UI/Loader/Loader';
 
 const CataloguePage = () => {
-  const { items, isLoading, error } = useSelector(getData);
+  const { adverts, isLoading, error } = useSelector(getData);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const CataloguePage = () => {
       {!isLoading && !error && (
         <div className={style.cataloguePage}>
           <VanFilters />
-          <VanList data={items} />
+          <VanList data={adverts} />
         </div>
       )}
 

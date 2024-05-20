@@ -31,17 +31,17 @@ const handleFulfilled = state => {
 
 const dataSlice = createSlice({
   name: 'data',
-  initialState: { items: [], isLoading: false, error: null },
+  initialState: { adverts: [], isLoading: false, error: null },
   extraReducers: builder => {
     builder
       .addCase(fetchData.fulfilled, (state, action) => {
-        state.items = action.payload;
+        state.adverts = action.payload;
       })
       .addCase(addData.fulfilled, (state, action) => {
-        state.items.push(action.payload);
+        state.adverts.push(action.payload);
       })
       .addCase(deleteData.fulfilled, (state, action) => {
-        state.items = state.items.filter(el => el.id !== action.payload);
+        state.adverts = state.adverts.filter(el => el.id !== action.payload);
       })
       .addMatcher(action => action.type.endsWith('/pending'), handlePending)
       .addMatcher(action => action.type.endsWith('/rejected'), handleRejected)

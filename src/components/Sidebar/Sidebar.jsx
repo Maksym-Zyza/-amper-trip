@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Sidebar.module.scss';
 import { NavLink } from 'react-router-dom';
 import { Catalog, Favorites, Home } from '../Icons';
-import { openSideBar } from '../../utils/OpenSideBar';
+import { openSideBar } from '../../utils/sideBar';
 
 export const SideBar = ({ handleSidebar, isOpenSidebar }) => {
   return (

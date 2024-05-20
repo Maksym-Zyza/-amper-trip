@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './PageContainer.module.scss';
-import { openSideBar } from '../../../utils/OpenSideBar';
+import { openSideBar } from '../../../utils/sideBar';
 
 export const PageContainer = ({ children, isOpenSidebar }) => {
   return (
