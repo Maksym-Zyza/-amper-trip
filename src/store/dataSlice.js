@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import toast from 'react-hot-toast';
-import { fetchApi } from 'API/api-service';
+import { fetchApi } from 'API/axios-service';
 
 export const fetchData = createAsyncThunk('fetchAll', async () => {
   const data = await fetchApi.getData();

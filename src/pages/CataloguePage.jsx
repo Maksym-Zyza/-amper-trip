@@ -5,21 +5,28 @@ import { VanFilters } from 'components/VanFilters/VanFilters';
 import VanList from 'components/VanList/VanList';
 import { fetchData } from 'store/dataSlice';
 import { getData } from 'store/selectors';
+import Error from 'components/UI/Error/Error';
+import Loader from 'components/UI/Loader/Loader';
 
 const CataloguePage = () => {
-  const data = useSelector(getData);
-  console.log(data);
-
+  const { items, isLoading, error } = useSelector(getData);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
   return (
-    <div className={style.cataloguePage}>
-      <VanFilters />
-      <VanList data={data.items} />
-    </div>
+    <>
+      {!isLoading && !error && (
+        <div className={style.cataloguePage}>
+          <VanFilters />
+          <VanList data={items} />
+        </div>
+      )}
+
+      {error && <Error error={error} />}
+      <Loader isLoading={isLoading} />
+    </>
   );
 };
 
