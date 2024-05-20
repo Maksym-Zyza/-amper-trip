@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styles from './CardDetails.module.scss';
 import { compileDetails, compileFeatures, formatPrice } from './helper';
-// import BookingForm from 'components/ModalContent/BookingForm';
 import { Location, Star } from 'components/Icons';
 import { iconDetails } from 'components/DetailsItem/helper';
+import BookingForm from 'components/BookingForm/BookingForm';
 
 export const CardDetails = ({ card, isDescription, setIsDescription }) => {
   const [activeTab, setActiveTab] = useState('features');
@@ -134,7 +134,7 @@ export const CardDetails = ({ card, isDescription, setIsDescription }) => {
             </div>
           )}
         </div>
-        {/* <BookingForm /> */}
+        <BookingForm />
       </div>
     </section>
   );
