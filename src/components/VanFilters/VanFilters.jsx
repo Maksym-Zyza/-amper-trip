@@ -10,6 +10,7 @@ import { filterData } from 'utils/filterAdverts';
 import { useDispatch } from 'react-redux';
 import { filterAdvertsList } from 'store/dataSlice';
 import Pagination from 'context';
+import toast from 'react-hot-toast';
 
 export const VanFilters = ({ adverts }) => {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ export const VanFilters = ({ adverts }) => {
     resetPage();
 
     dispatch(filterAdvertsList(filteredData));
+    toast.success('Filtered successfully');
     resetFilterParams(e.target);
   };
 
