@@ -55,7 +55,7 @@ const VanCard = ({ item }) => {
           {item.rating}
           <span> ({`${item.reviews?.length}`} Reviews)</span>
           <span className={style.location}>
-            <Location /> item.location
+            <Location /> {item.location}
           </span>
         </div>
         <p>{item.description}</p>

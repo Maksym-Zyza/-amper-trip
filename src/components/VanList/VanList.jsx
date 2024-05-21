@@ -5,8 +5,13 @@ import VanCard from './VanCard';
 const VanList = ({ data, listRef }) => {
   return (
     <div className={style.list} ref={listRef}>
-      {data.length > 0 &&
-        data.map(item => <VanCard item={item} key={item._id} />)}
+      {data.length > 0 ? (
+        data.map(item => <VanCard item={item} key={item._id} />)
+      ) : (
+        <div className={style.noData}>
+          Nothing found, please try again or try later.
+        </div>
+      )}
     </div>
   );
 };

@@ -32,7 +32,7 @@ const CataloguePage = () => {
       {!isLoading && !error && (
         <div className={style.pageWrapper}>
           <div className={style.cataloguePage}>
-            <VanFilters />
+            <VanFilters adverts={adverts} />
             <VanList data={cards} listRef={listRef} />
           </div>
           {isVisible && <Button text="Load more" onClick={handleLoadMore} />}

@@ -91,3 +91,14 @@
     }
   }
 }
+
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 820px;
+  height: 734px;
+  border-radius: 16px;
+  background-color: aliceblue;
+}

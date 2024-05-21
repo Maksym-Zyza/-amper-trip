@@ -1,27 +1,32 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './VanFilters.module.scss';
 import { Location } from 'components/Icons';
 import { Button } from 'components/UI/Button/Button';
 import { vehicleEquipment, vehicleType } from './helper';
 import { Checkbox } from 'components/UI/Checkbox/Checkbox';
 import { RadioButton } from 'components/UI/RadioButton/RadioButton';
+import { getFilterParams } from 'utils/filterParams';
+import { filterData } from 'utils/filterAdverts';
+import { useDispatch } from 'react-redux';
+import { filterAdvertsList } from 'store/dataSlice';
+import Pagination from 'context';
 
-export const VanFilters = () => {
+export const VanFilters = ({ adverts }) => {
+  const dispatch = useDispatch();
+  const { resetPage } = useContext(Pagination);
+
   const handleSubmit = e => {
     e.preventDefault();
-    const { location, automatic, AC, TV, kitchen, shower, venType } =
-      e.target.elements;
-    const data = {
-      location: location.value,
-      automatic: automatic.checked,
-      AC: AC.checked,
-      TV: TV.checked,
-      kitchen: kitchen.checked,
-      shower: shower.checked,
-      venType: venType.value,
-    };
+    const filterParams = getFilterParams(e.target);
+    let filteredData = filterData(adverts, filterParams);
+    resetPage();
 
-    console.log(data);
+    dispatch(filterAdvertsList(filteredData));
+    resetFilterParams(e.target);
+  };
+
+  const resetFilterParams = form => {
+    form.reset();
   };
 
   return (
@@ -42,8 +47,13 @@ export const VanFilters = () => {
           </div>
           <h3>Vehicle Type</h3>
           <div className={style.list}>
-            {vehicleType.map(({ name, label, icon }) => (
-              <RadioButton key={label} name={name} label={label} icon={icon} />
+            {vehicleType.map(({ value, label, icon }) => (
+              <RadioButton
+                key={label}
+                value={value}
+                label={label}
+                icon={icon}
+              />
             ))}
           </div>
         </div>

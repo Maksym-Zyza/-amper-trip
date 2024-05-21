@@ -18,7 +18,11 @@ export const vehicleEquipment = [
 ];
 
 export const vehicleType = [
-  { label: 'Van', icon: <Camper /> },
-  { label: 'Fully Integrated', icon: <CamperFully /> },
-  { label: 'Alcove', icon: <CamperMid /> },
+  { label: 'Van', icon: <Camper />, value: 'panelTruck' },
+  {
+    label: 'Fully Integrated',
+    icon: <CamperFully />,
+    value: 'fullyIntegrated',
+  },
+  { label: 'Alcove', icon: <CamperMid />, value: 'alcove' },
 ];

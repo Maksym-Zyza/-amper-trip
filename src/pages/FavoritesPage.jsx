@@ -10,7 +10,7 @@ const FavoritesPage = () => {
 
   return (
     <div className={style.cataloguePage}>
-      <VanFilters />
+      <VanFilters adverts={favorites} />
       <VanList data={favorites} />
     </div>
   );

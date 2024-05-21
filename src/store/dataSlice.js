@@ -33,6 +33,11 @@ const handleFulfilled = state => {
 const dataSlice = createSlice({
   name: 'data',
   initialState: { adverts: [], isLoading: false, error: null },
+  reducers: {
+    filterAdvertsList(state, action) {
+      state.adverts = action.payload;
+    },
+  },
   extraReducers: builder => {
     builder
       .addCase(fetchData.fulfilled, (state, action) => {
@@ -53,4 +58,5 @@ const dataSlice = createSlice({
   },
 });
 
+export const { filterAdvertsList } = dataSlice.actions;
 export const dataReducer = dataSlice.reducer;
