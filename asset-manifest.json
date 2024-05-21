@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/camper-trip/static/css/main.9dc2127a.css",
-    "main.js": "/camper-trip/static/js/main.1262b79e.js",
+    "main.js": "/camper-trip/static/js/main.234d4cd5.js",
     "static/css/242.921c727f.chunk.css": "/camper-trip/static/css/242.921c727f.chunk.css",
     "static/js/242.ec6e2638.chunk.js": "/camper-trip/static/js/242.ec6e2638.chunk.js",
-    "static/css/971.8a54937d.chunk.css": "/camper-trip/static/css/971.8a54937d.chunk.css",
+    "static/css/971.7c45a3a7.chunk.css": "/camper-trip/static/css/971.7c45a3a7.chunk.css",
     "static/js/971.be39b5bc.chunk.js": "/camper-trip/static/js/971.be39b5bc.chunk.js",
-    "static/css/532.8a54937d.chunk.css": "/camper-trip/static/css/532.8a54937d.chunk.css",
+    "static/css/532.7c45a3a7.chunk.css": "/camper-trip/static/css/532.7c45a3a7.chunk.css",
     "static/js/532.6c81072f.chunk.js": "/camper-trip/static/js/532.6c81072f.chunk.js",
     "static/js/495.75a23e18.chunk.js": "/camper-trip/static/js/495.75a23e18.chunk.js",
     "static/media/Wind.svg": "/camper-trip/static/media/Wind.8cb76acefcc79770764c42c2b8fd2a38.svg",
@@ -46,17 +46,17 @@
     "static/media/Close.svg": "/camper-trip/static/media/Close.25dc3f46a342a188874fa545ced03ca2.svg",
     "static/media/BurgerBtn.svg": "/camper-trip/static/media/BurgerBtn.b63f2b0133855655606c4172f642b17e.svg",
     "main.9dc2127a.css.map": "/camper-trip/static/css/main.9dc2127a.css.map",
-    "main.1262b79e.js.map": "/camper-trip/static/js/main.1262b79e.js.map",
+    "main.234d4cd5.js.map": "/camper-trip/static/js/main.234d4cd5.js.map",
     "242.921c727f.chunk.css.map": "/camper-trip/static/css/242.921c727f.chunk.css.map",
     "242.ec6e2638.chunk.js.map": "/camper-trip/static/js/242.ec6e2638.chunk.js.map",
-    "971.8a54937d.chunk.css.map": "/camper-trip/static/css/971.8a54937d.chunk.css.map",
+    "971.7c45a3a7.chunk.css.map": "/camper-trip/static/css/971.7c45a3a7.chunk.css.map",
     "971.be39b5bc.chunk.js.map": "/camper-trip/static/js/971.be39b5bc.chunk.js.map",
-    "532.8a54937d.chunk.css.map": "/camper-trip/static/css/532.8a54937d.chunk.css.map",
+    "532.7c45a3a7.chunk.css.map": "/camper-trip/static/css/532.7c45a3a7.chunk.css.map",
     "532.6c81072f.chunk.js.map": "/camper-trip/static/js/532.6c81072f.chunk.js.map",
     "495.75a23e18.chunk.js.map": "/camper-trip/static/js/495.75a23e18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9dc2127a.css",
-    "static/js/main.1262b79e.js"
+    "static/js/main.234d4cd5.js"
   ]
 }
