@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from 'store/store';
 import { PaginationProvider } from 'context';
-import { App } from 'components/App';
+import { App } from 'App';
 import './index.scss';
 
 const container = document.getElementById('root');

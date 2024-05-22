@@ -32,8 +32,6 @@ you need for a comfortable trip. Join us and discover new horizons.
   between sessions using Redux Persist.
 - **Axios**: HTTP requests are made with Axios.
 - **MockAPI**: Main data is stored on a remote server using MockAPI.io.
-- **Lottie and React Player**: Dynamic elements added with Lottie and React
-  Player.
 - **Figma**: Precise content markup and styles are made using the Figma project
   design.
 
@@ -73,3 +71,55 @@ To start the development server, run:
 ```bash
 npm  start
 ```
+
+## Project Structure
+
+camper-trip/\
+│\
+├── public/\
+│ ├── index.html\
+│ └── ...\
+│\
+├── src/\
+│ ├── API\
+│ │ ├── axios-service/\
+│ ├── components/\
+│ │ ├── BookingForm/\
+│ │ ├── MapViewPage/\
+│ │ ├── UI/\
+│ │ └── ...\
+│ │\
+│ ├── context/\
+│ │ ├── index.js\
+│ │ └── ...\
+│ │\
+│ ├── hooks/\
+│ │ ├── useToggleSidebar.js\
+│ │ └── ...\
+│ │\
+│ ├── pages/\
+│ │ ├── HomePage.js\
+│ │ └── ...\
+│ │\
+│ ├── store/\
+│ │ ├── store.js\
+│ │ ├── reducer.js\
+│ │ ├── selectors.js\
+│ │ └── ...\
+│ │\
+│ ├── utils/\
+│ │ ├── filterAdverts.js\
+│ │ ├── filterParams.js\
+│ │ ├── pagination.js\
+│ │ └── ...\
+│ │\
+│ ├── App.js\
+│ ├── index.js\
+│ └── ...\
+├── .gitignore\
+├── .prettierrc.json\
+├── jsconfig.json.json\
+├── package-lock.json\
+├── package.json\
+├── package.json\
+└── README.md\
