@@ -26,7 +26,7 @@ const VanCard = ({ item }) => {
   };
 
   return (
-    <div key={item._id} className={style.itemWrapper}>
+    <li key={item._id} className={style.itemWrapper}>
       <Modal ref={modalRef}>
         <CardDetails
           card={card}
@@ -66,7 +66,7 @@ const VanCard = ({ item }) => {
         </ul>
         <Button text="Show more" onClick={() => handleShowMore(item)} />
       </div>
-    </div>
+    </li>
   );
 };
 
