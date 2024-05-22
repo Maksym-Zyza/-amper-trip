@@ -73,10 +73,3 @@ To start the development server, run:
 ```bash
 npm  start
 ```
-
-## Project Structure
-
-camper-trip/ │ ├── public/ │ ├── index.html │ └── ... │ ├── src/ │ ├──
-components/ │ │ ├── BookingForm/ │ │ ├── MapViewPage/ │ │ ├── UI/ │ │ └── ... │
-├── pages/ │ │ ├── HomePage.js │ │ └── ... │ ├── App.js │ ├── index.js │ └── ...
-│ ├── .gitignore ├── package.json └── README.md
