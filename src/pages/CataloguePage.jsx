@@ -21,6 +21,10 @@ const CataloguePage = () => {
   const listRef = useRef();
 
   useEffect(() => {
+    adverts.length && setFilteredAdverts(adverts);
+  }, [adverts]);
+
+  useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
 
