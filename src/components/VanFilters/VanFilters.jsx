@@ -7,13 +7,10 @@ import { Checkbox } from 'components/UI/Checkbox/Checkbox';
 import { RadioButton } from 'components/UI/RadioButton/RadioButton';
 import { getFilterParams } from 'utils/filterParams';
 import { filterData } from 'utils/filterAdverts';
-import { useDispatch } from 'react-redux';
-import { filterAdvertsList } from 'store/dataSlice';
 import Pagination from 'context';
 import toast from 'react-hot-toast';
 
-export const VanFilters = ({ adverts }) => {
-  const dispatch = useDispatch();
+export const VanFilters = ({ adverts, setFilteredAdverts }) => {
   const { resetPage } = useContext(Pagination);
 
   const handleSubmit = e => {
@@ -22,7 +19,7 @@ export const VanFilters = ({ adverts }) => {
     let filteredData = filterData(adverts, filterParams);
     resetPage();
 
-    dispatch(filterAdvertsList(filteredData));
+    setFilteredAdverts(filteredData);
     toast.success('Filtered successfully');
     resetFilterParams(e.target);
   };

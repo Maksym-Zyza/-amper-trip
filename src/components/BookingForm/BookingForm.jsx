@@ -28,7 +28,6 @@ const BookingForm = () => {
     if (Object.keys(validationErrors).length === 0) {
       toast.success('Your request has been sent');
       window.location.reload();
-      console.log(data);
     }
   };
 

@@ -2,7 +2,7 @@ export const filterData = (data, filterParams) => {
   return data.filter(item => {
     if (
       filterParams.location &&
-      !item.location.includes(filterParams.location)
+      !item.location.toLowerCase().includes(filterParams.location.toLowerCase())
     ) {
       return false;
     }

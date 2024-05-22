@@ -122,7 +122,7 @@ export const CardDetails = ({ card, isDescription, setIsDescription }) => {
                         {Array.from(
                           { length: review.reviewer_rating },
                           (_, idx) => (
-                            <Star />
+                            <Star key={idx} />
                           )
                         )}
                       </span>

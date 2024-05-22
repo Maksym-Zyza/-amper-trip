@@ -7,16 +7,6 @@ export const fetchData = createAsyncThunk('fetchAll', async () => {
   toast.success(`Adverts retrieved successfully`);
   return data;
 });
-export const addData = createAsyncThunk('addData', async body => {
-  const createItem = await fetchApi.createData(body);
-  toast.success(`Advert ${createItem.name} was added`);
-  return createItem;
-});
-export const deleteData = createAsyncThunk('deleteData', async id => {
-  const deletedItem = await fetchApi.deleteData(id);
-  toast.success(`Advert ${deletedItem.name} was removed`);
-  return deletedItem.id;
-});
 
 const handlePending = state => {
   state.isLoading = true;
@@ -33,21 +23,10 @@ const handleFulfilled = state => {
 const dataSlice = createSlice({
   name: 'data',
   initialState: { adverts: [], isLoading: false, error: null },
-  reducers: {
-    filterAdvertsList(state, action) {
-      state.adverts = action.payload;
-    },
-  },
   extraReducers: builder => {
     builder
       .addCase(fetchData.fulfilled, (state, action) => {
         state.adverts = action.payload;
-      })
-      .addCase(addData.fulfilled, (state, action) => {
-        state.adverts.push(action.payload);
-      })
-      .addCase(deleteData.fulfilled, (state, action) => {
-        state.adverts = state.adverts.filter(el => el.id !== action.payload);
       })
       .addMatcher(action => action.type.endsWith('/pending'), handlePending)
       .addMatcher(action => action.type.endsWith('/rejected'), handleRejected)
@@ -58,5 +37,4 @@ const dataSlice = createSlice({
   },
 });
 
-export const { filterAdvertsList } = dataSlice.actions;
 export const dataReducer = dataSlice.reducer;

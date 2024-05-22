@@ -9,7 +9,7 @@ const VanList = ({ data, listRef }) => {
         data.map(item => <VanCard item={item} key={item._id} />)
       ) : (
         <li className={style.noData}>
-          Nothing found, please try again or try later.
+          Nothing found for search parameters. Please try again.
         </li>
       )}
     </ul>

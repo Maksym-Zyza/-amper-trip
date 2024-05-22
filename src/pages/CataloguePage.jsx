@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import style from './Pages.module.scss';
 import { VanFilters } from 'components/VanFilters/VanFilters';
@@ -14,9 +14,10 @@ import { scrollTo } from 'utils/scrollTo';
 
 const CataloguePage = () => {
   const { adverts, isLoading, error } = useSelector(getAdverts);
+  const [filteredAdverts, setFilteredAdverts] = useState(adverts);
   const dispatch = useDispatch();
   const { currentPage, increasePage } = useContext(Pagination);
-  const { cards, isVisible } = pagination(currentPage, adverts);
+  const { cards, isVisible } = pagination(currentPage, filteredAdverts);
   const listRef = useRef();
 
   useEffect(() => {
@@ -32,7 +33,10 @@ const CataloguePage = () => {
       {!isLoading && !error && (
         <div className={style.pageWrapper}>
           <div className={style.cataloguePage}>
-            <VanFilters adverts={adverts} />
+            <VanFilters
+              adverts={adverts}
+              setFilteredAdverts={setFilteredAdverts}
+            />
             <VanList data={cards} listRef={listRef} />
           </div>
           {isVisible && <Button text="Load more" onClick={handleLoadMore} />}

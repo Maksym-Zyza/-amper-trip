@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './Pages.module.scss';
 import { useSelector } from 'react-redux';
 import { getFavorites } from 'store/selectors';
@@ -7,11 +7,12 @@ import VanList from 'components/VanList/VanList';
 
 const FavoritesPage = () => {
   const favorites = useSelector(getFavorites);
+  const [filteredAdverts, setFilteredAdverts] = useState(favorites);
 
   return (
     <div className={style.cataloguePage}>
-      <VanFilters adverts={favorites} />
-      <VanList data={favorites} />
+      <VanFilters adverts={favorites} setFilteredAdverts={setFilteredAdverts} />
+      <VanList data={filteredAdverts} />
     </div>
   );
 };
